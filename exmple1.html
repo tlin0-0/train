@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+</head>
+<body>
+<button onclick="minus();">-</button>
+<span id="counter">0</span>
+<button onclick="plus();">+</button>
+<script>
+    function minus() {
+        // var el = document.querySelector('#counter');
+        $('#counter').text();
+        // alert();
+        // var num = $('#counter').text();
+        $('#counter').html(function(n,c){
+
+         return c - 1;
+
+        });
+        // if(el.innerHTML > 1)
+        // el.innerHTML--;
+        }
+        function plus() {
+            var el = document.querySelector('#counter');
+            el.innerHTML++;
+    }
+</script>
+</body>
+</html>
