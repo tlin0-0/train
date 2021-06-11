@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        #screen{
+            position: relative;    
+            height: 500px;     
+            width: 1000px;  
+            border: 1px solid rgb(209, 205, 205);
+            margin: 0 auto;
+            overflow: hidden;   
+            background-color: white;                
+        }
+
+        input{
+            border-radius: 5px;
+            width: 300px;
+            height: 30px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .btn{
+            width: 15%;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 auto;
+            text-align: center;
+ 
+        }
+        button{
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+    <title>弹幕墙</title>
+    <script>
+      $(function(){
+            //初始化透明度
+            var op = false;
+
+            //发送弹幕事件
+            $("#send").click(function(){ 
+            
+            //生成随机颜色
+            var color=getColor();
+
+            //生成随机字体大小
+             var fontsize = parseInt(Math.random() * 40)+20;
+
+            //生成随机位置
+             var top = parseInt(Math.random() * 400)-20;
+             top = top <20 ? '30px' : top + 'px';
+
+            //生成随机速度
+             var speed = getSpeed();
+
+            //创建弹幕
+            $("<span></span>")           
+            .text($("#comment").val())
+            .css({
+                 "position" :'absolute',
+                "top" : top,
+                "right" : 0,
+                "color": color ,
+                "font-size": fontsize + "px",
+            })
+             .animate({right:'100%'}, speed, function(){$(this).remove();})
+             .appendTo("#screen");
+            
+            //透明度设置
+            if(op){
+                $('span').css('opacity',0.3);
+            }
+             else{
+                $('span').css('opacity',1);  
+            }
+         });
+            
+
+            //更改透明度事件
+            $('#opacity').click(function(){
+                op=!op;
+                if(op){
+                 $('span').css('opacity',0.3);
+                }
+                else{
+                    $('span').css('opacity',1);
+                }
+           
+            })
+
+            //随机颜色
+             function getColor() {
+                 var color1 = Math.floor(Math.random() * 256);
+                 var color2 = Math.floor(Math.random() * 256);
+                 var color3 = Math.floor(Math.random() * 256);
+                 return `rgb(${color1},${color2},${color3})`;
+            }
+
+            //随机速度
+            function getSpeed(){
+                var speed = Math.random() * 10000;
+                var speed = speed < 3000 ? 5000 :speed;
+              return speed;
+            } 
+             
+            //回车事件
+            $("#comment").keyup(function (e) {
+                if (e.keyCode == 13) {
+                    $("#send").click();
+                }
+            });
+
+            //清除弹幕
+            $("#clear").click(function(){ 
+            $("#screen").empty();
+            });
+           
+    
+       
+        }); 
+        </script>
+        
+</head>
+<body>
+    <div id="container">
+      <div id="screen"></div>
+        <div id="btn">
+            <input type="text" id="comment" class="comment">
+            <button type="button" id="send">发射</button>
+            <button type="button" id="clear">清屏</button>
+            <button id="opacity">透明度</button> 
+        </div>
+    </div>
+</body>
+</html>
