@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript"></script>
 </head>
 <body>
-    <h2>a</h2>
+<div id="message"></div>
+<ul id="good">
+    <!-- <li>苹果</li> -->
+</ul>
+<button id="deleteAll">删除所有商品</button>
+<div>
+    <span>名称</span>
+    <input type="text" name="" id="inputMsg">
+    <button id="add">添加</button>
+</div>
+<div>
+  <ul>
+    <li>品名</li>
+    <li></li>
+  </ul>
+</div>
+
+<script>
+  axios.get("https://www.fastmock.site/mock/c875cd8dad2155ed530fbc97a96be65a/test01/test1").then(function (res){
+    console.log('mock',res.data);
+    $(function(){
+
+    for(let i=0; i<res.data.data.length; i++){
+      console.log(res.data.data[i]);
+      $('#good').append(`<li>${product.data.data[i].name}</li>`)
+    }
+    
+     
+
+     })
+
+    })
+</script>
 </body>
 </html>
