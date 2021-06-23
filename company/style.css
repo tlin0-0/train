@@ -1,0 +1,192 @@
+
+body{
+  margin: 0 auto;
+  border: 0 auto;
+} 
+/* 头部 */
+header{
+  display: flex;
+  height: 100px;
+    align-items: center;
+  justify-content: center;
+  background-color: rgb(78, 57, 37);
+  
+}
+nav{
+display: flex;
+width: 1200px;
+align-items: center;
+justify-content:space-between;
+}
+
+.item ul{
+display: flex;
+margin: 10px 10px;
+text-align: center;
+}
+
+.item ul li{
+list-style: none;
+}
+
+.item ul li a{
+display: flex;
+padding: 0 10px;
+color: white;
+font-size: large;
+text-decoration: none;
+}
+.item ul li a:hover{
+background-color: white;
+color:rgb(78, 57, 37) ;
+}
+
+.logo{
+display: flex;
+align-items:baseline;
+
+}
+.logo img{
+width: 75px;
+height: 80px;
+}
+.logo p{
+color: white;
+font-size: large;
+}
+/* 正文 */
+.carousel-inner img{
+  height:600px;
+}
+
+.card img {
+  height: 350px;
+  width: 250px;
+}
+.cardgroup{
+  display: flex;
+  margin: 15px auto;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card{
+  display: flex;
+  /* margin: 0px auto; */
+
+}
+
+#container h2{
+  /* display: flex; */
+  text-align: center;
+  padding-top: 30px;
+}
+
+.list{
+  display: flex;
+  width: 1200px;
+  margin: 10px auto;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.list li{
+ text-align: center;
+ margin: 15px;
+ padding: 15px;
+ /* border: 1px solid; */
+ list-style: none;
+}
+
+.pagination{
+     display: flex;
+     padding-bottom: 30px;
+     align-items: center;
+     justify-content: center;
+ }
+.list h3{
+  text-align: center;
+}
+.list h5{
+  text-align: center;
+}
+.list p{
+  color: rgb(120, 133, 133);
+  font-size: 20px;
+}
+#allmap{
+   display: flex;
+   width: 600px;
+   height: 400px;
+}
+#about{
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+}
+#link{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   width: 600px;
+   height: 200px;
+}
+#link p{
+   font-size: 25px;
+}
+.row{
+   text-align: center;
+}
+
+
+footer{
+  background-color: rgb(221, 220, 220);
+  text-align: center;
+}
+footer p{
+   font-size: 20px;
+}
+
+footer i{
+   font-size: 100px;
+   color: rgb(90, 89, 89);
+}  
+#row{
+  text-align: center;
+  justify-content: center;
+}
+#other{
+       display: flex;
+       width: 1200px;
+       margin: 0 auto;
+       height: 300px;
+    
+       align-items: center;
+       justify-content:space-around;
+
+   }  
+#smile{
+       height: 175px;
+       width: 175px;
+   }
+#bottom{
+       display: flex;
+       justify-content: center;
+       align-items:center;
+       height: 100px;
+      background-color: rgb(209, 209, 209);
+}  
+#bottom p{
+  margin: 0;
+  font-size: 20px;
+  
+}
+ 
