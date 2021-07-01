@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script> 
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script src="https://cdn.bootcdn.net/ajax/libs/lazysizes/5.3.2/lazysizes.js"></script>
+   <link rel="stylesheet" href="/respo-style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <div class="logo">
+          <img src="/train/img/smile.jpg" alt=""></div>
+        <a class="navbar-brand" href="#">个人展示页</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" 
+            class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">首页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#soccer">足球明星</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#basketball">篮球明星</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+      <div class="container">
+        <div class="title">
+            <h3 id="soccer" class="mv">喜欢的足球明星</h3>
+            <div class="a"></div>
+            <br>
+          </div>
+          <ul class="row">
+            <li class="col col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <img data-src="/train/img/nei.jpg" class="lazyload" alt=""> <h4>内马尔</h4></li>
+            <li class="col col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <img data-src="/train/img/mbp.jpg" class="lazyload" alt=""> <h4>姆巴佩</h4></li>
+            <li class="col col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <img data-src="/train/img/cl.jpg" class="lazyload" alt=""> <h4>C罗</h4></li>
+            <li class="col col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <img data-src="/train/img/mei.jpg" class="lazyload" alt=""> <h4>梅西</h4></li>
+        </ul>
+        <div class="title">
+            <h3 id="basketball" class="mv">喜欢的篮球明星</h3>
+            <div class="a"></div>
+            <br>
+          </div>
+          <ul class="row">
+            <li class="col col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <img data-src="/train/img/ai.jpg" class="lazyload" alt=""><h4>艾弗森</h4></li>
+            <li class="col col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <img data-src="/train/img/wei.jpg" class="lazyload" alt=""> <h4>威少</h4></li>
+            <li class="col col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <img data-src="/train/img/tang.jpg" class="lazyload" alt=""> <h4>汤普森</h4></li>
+            <li class="col col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <img data-src="/train/img/ou.jpg" class="lazyload" alt=""> <h4>欧文</h4></li>
+        </ul>
+      </div>
+      <footer>
+        <div class="container">
+             <div class="row">
+                <div class="col-lg-3 col-sm-12 col-md-6"> <i class="bi bi-building"></i>
+                  <p>福建省闽侯县溪源宫路200号</p> </div>
+                <div class="col-lg-3 col-sm-12 col-md-6"> <i class="bi bi-envelope"></i>
+                  <p>mju@example.com</p></div> 
+                <div class="col-lg-3 col-sm-12 col-md-6"> <i class="bi bi-telephone"></i>
+                  <p>400-123-4567</p></div>
+                 <div class="col-lg-3 col-sm-12 col-md-6">
+                   <img id="footerImg" src="/train/img/smile.jpg" alt="">
+                <p>按一按 联系我们</p></div>
+                </div>
+                 
+                </div>
+                <div id="bottom"><p>版权所有&copy;right tlin</p></div>
+         
+        </footer>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">联系我们</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">我的通讯地址:</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">你想对我说的话:</label>
+                <textarea type="text" class="form-control" id="exampleInputPassword1"> </textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            <button type="submit" id="submit" class="btn btn-primary">提交</button>
+          </div>
+          </div>
+          </div>
+          </div>
+            <script>
+              $(function(){
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+                $('#footerImg').click(function(){
+                  myModal.show()
+                })
+                $('#submit').click(function(){
+                  let email = $('#exampleInputEmail1').val()
+                  let message = $('#exampleInputPassword1').val()
+                  console.log('email',email,message)
+              
+              axios({
+                  url:'https://oltijszl.lc-cn-n1-shared.com/1.1/classes/data',
+                  method:'post',
+                  headers:{
+                    'X-LC-Id':'OLtijszl5VM3cqWSQA9vYrN7-gzGzoHsz',
+                    'X-LC-Key':'ew4uPvRB7ez4PY1geeA9X44j'
+                  },
+                  data:{
+                    email:email,
+                    message:message
+                  }
+              })
+              myModal.hide()
+              
+                }) 
+              })
+            </script>
+</body>
+</html>

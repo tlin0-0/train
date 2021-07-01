@@ -1,0 +1,107 @@
+
+/* 导航 */
+body{
+    margin: 0;
+    border: 0;
+  } 
+  .logo img{
+    width: 100px;
+    height: 100px;
+}
+  .navbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .navbar-custom{
+      background-color: rgb(78, 57, 37);
+      text-decoration: none;
+  }
+  .navbar-toggler-icon{
+        color: rgba(255,255,255,.8);
+      border-color: rgba(255,255,255,.1);
+  }  
+  .navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: none;
+  }
+  /* 自定义brand和文字颜色 */
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-text {
+      color: rgba(255,255,255,.8);
+  }
+  /* 自定义链接颜色 */
+  .navbar-custom .navbar-nav .nav-link {
+      color: rgba(255,255,255,.5);
+  }
+  /* 自定义激活或者悬停的链接颜色 */
+  .navbar-custom .nav-item.active .nav-link,
+  .navbar-custom .nav-item:hover .nav-link {
+      color: #ffffff;
+  }
+.container .title{
+    text-align: center;
+}
+.container .title .a{
+    height: 4px;
+    background-color: #c8484e;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.container .title .mv{
+    margin-top: 30px;
+}
+.container ul li{
+    /* border: 2px solid hsl(24, 29%, 87%); */
+    text-align: center;
+    list-style: none;
+}
+.container ul li:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+.container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+ } 
+ .container .row img{
+    width: 240px;
+    height: 280px;
+}
+/* 页脚 */
+footer{
+    background-color: rgb(221, 220, 220);
+    text-align: center;
+    
+  }
+  footer p{
+     font-size: 20px;
+  }
+  
+  footer i{
+     font-size: 100px;
+     color: rgb(90, 89, 89);
+  }  
+  #row{
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  #footerImg{
+    padding: 20px;
+         height: 160px;
+         width: 160px;
+     }
+
+  #bottom{
+        background-color: rgb(209, 209, 209);
+  }  
+
+  #bottom p{
+    margin: 0;
+    font-size: 20px;
+    
+  }
